@@ -19,7 +19,7 @@ jobs:
         run: go list -json -m all > go.list
 
       - name: Scan dependencies with Nancy
-        uses: gamertense/nancy-github-action@main
+        uses: nancy-github-action/nancy-github-action@v1.0.3
         with:
           nancyCommand: sleuth
           goListFile: go.list
